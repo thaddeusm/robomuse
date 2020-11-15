@@ -103,7 +103,7 @@
 	}
 
 	#responseBubble {
-		background: var(--light-box);
+		background: var(--light-gray);
 	}
 
 	::selection {
