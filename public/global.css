@@ -76,7 +76,7 @@
 
 	select {
 		color: var(--light-text);
-    	background: var(--light-box);
+    	background: var(--light-gray);
     	background-image: url("/images/darkselect.svg");
 	}
 
