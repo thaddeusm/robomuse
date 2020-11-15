@@ -8,8 +8,14 @@
 	let userInput = '';
 	let query;
 
+	let loading = false;
+
 	async function processRequest() {
+		loading = true;
+
 		let result = await getWords(query, userInput);
+
+		loading = false;
 
 		dispatch('response-received', {res: result});
 	}
@@ -41,7 +47,7 @@
 	</div>
 	<div id="bottom">
 		<input type="text" bind:value={userInput} on:keyup={handleKeyup}>
-		<button class="action-button" on:click={processRequest} disabled={userInput == ''}>search</button>
+		<button class="action-button" on:click={processRequest} disabled={userInput == '' || loading}>search</button>
 	</div>
 </section>
 
