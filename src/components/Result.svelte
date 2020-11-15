@@ -102,7 +102,6 @@
 		text-align: center;
 		word-break: break-word;
 		grid-area: responseText;
-		margin: 0 .5rem;
 	}
 
 	#right {
