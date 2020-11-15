@@ -85,7 +85,7 @@
 	#responseBubble {
 		width: 100%;
 		display: grid;
-		grid-template-columns: 15% 70% 15%;
+		grid-template-columns: 20% 60% 20%;
 		grid-template-areas: "left responseText right";
 		align-items: center;
 		border-radius: var(--radius);
@@ -117,6 +117,7 @@
 	button {
 		display: block;
 		width: 100%;
+		min-width: 2rem;
 		text-align: center;
 		height: 100%;
 	}
