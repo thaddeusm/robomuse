@@ -40,7 +40,7 @@ const transformStr = async (input) => {
 const getSynonyms = async (str) => {
 	let res;
 	try {
-		res = await fetch(`http://api.datamuse.com/words?ml=${str}`, {
+		res = await fetch(`https://api.datamuse.com/words?ml=${str}`, {
 			method: 'GET'
 		});
 
@@ -55,7 +55,7 @@ const getSynonyms = async (str) => {
 const getRhymes = async (str) => {
 	let res;
 	try {
-		res = await fetch(`http://api.datamuse.com/words?rel_rhy=${str}`, {
+		res = await fetch(`https://api.datamuse.com/words?rel_rhy=${str}`, {
 			method: 'GET'
 		});
 
@@ -70,7 +70,7 @@ const getRhymes = async (str) => {
 const getAdjectives = async (str) => {
 	let res;
 	try {
-		res = await fetch(`http://api.datamuse.com/words?rel_jjb=${str}`, {
+		res = await fetch(`https://api.datamuse.com/words?rel_jjb=${str}`, {
 			method: 'GET'
 		});
 
@@ -85,7 +85,7 @@ const getAdjectives = async (str) => {
 const getNouns = async (str) => {
 	let res;
 	try {
-		res = await fetch(`http://api.datamuse.com/words?rel_jja=${str}`, {
+		res = await fetch(`https://api.datamuse.com/words?rel_jja=${str}`, {
 			method: 'GET'
 		});
 
@@ -100,7 +100,7 @@ const getNouns = async (str) => {
 const getCollocations = async (str) => {
 	let res;
 	try {
-		res = await fetch(`http://api.datamuse.com/words?rel_trg=${str}`, {
+		res = await fetch(`https://api.datamuse.com/words?rel_trg=${str}`, {
 			method: 'GET'
 		});
 

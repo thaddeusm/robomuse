@@ -13,6 +13,12 @@
 
 		dispatch('response-received', {res: result});
 	}
+
+	function handleKeyup(e) {
+		if (e.keyCode == 13) {
+			processRequest();
+		}
+	}
 </script>
 
 <section id="form">
@@ -37,7 +43,7 @@
 		</select>
 	</div>
 	<div id="bottom">
-		<input type="text" bind:value={userInput}>
+		<input type="text" bind:value={userInput} on:keyup={handleKeyup}>
 		<button class="action-button" on:click={processRequest} disabled={userInput == ''}>search</button>
 	</div>
 </section>
