@@ -1,19 +1,28 @@
 <script>
 	import Result from './components/Result.svelte';
 	import Form from './components/Form.svelte';
+
+	let results = [];
+
+	function handleResponse(e) {
+		results = e.detail.res;
+		console.log(results);
+	}
 </script>
 
 <div id="container">
 	<header>
 		<h2 id="appName">Robomuse</h2>
-		<h6 id="author">made with ❤️ by <a href="https://thaddeus.education/" target="_blank">Thaddeus</a></h6>
+		<h6 id="author">
+			made with ❤️ by <a href="https://thaddeus.education/" target="_blank">Thaddeus</a>
+		</h6>
 	</header>
 	<main>
 		<section id="result">
-			<Result />
+			<Result {results} />
 		</section>
 		<section id="inputArea">
-			<Form />
+			<Form on:response-received={handleResponse} />
 		</section>
 	</main>
 	<footer>

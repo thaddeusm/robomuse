@@ -1,16 +1,26 @@
 <script>
-	
+	import { getWords } from './../api.js';
+
+	import { createEventDispatcher } from 'svelte';
+
+	const dispatch = createEventDispatcher();
+
+	let userInput = '';
+	let query;
+
+	async function processRequest() {
+		let result = await getWords(query, userInput);
+
+		dispatch('response-received', {res: result});
+	}
 </script>
 
 <section id="form">
 	<div id="top">
 		<span>I need</span>
-		<select>
+		<select bind:value={query}>
 			<option value="a word synonomous with">
 				a word synonomous with
-			</option>
-			<option value="a word that sounds like">
-				a word that sounds like
 			</option>
 			<option value="a word that rhymes with">
 				a word that rhymes with
@@ -27,8 +37,8 @@
 		</select>
 	</div>
 	<div id="bottom">
-		<input type="text">
-		<button>search</button>
+		<input type="text" bind:value={userInput}>
+		<button class="action-button" on:click={processRequest} disabled={userInput == ''}>search</button>
 	</div>
 </section>
 

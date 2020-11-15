@@ -23,7 +23,7 @@
 		background: var(--dark-background);
 	}
 
-	button {
+	.action-button {
 		background: var(--dark-accent);
 	}
 
@@ -52,7 +52,7 @@
 		color: var(--dark-text);
 	}
 
-	#responseText {
+	#responseBubble {
 		background: var(--dark-gray);
 	}
 
@@ -67,7 +67,7 @@
 		background: var(--light-background);
 	}
 
-	button {
+	.action-button {
 		background: var(--light-accent);
 	}
 
@@ -96,7 +96,7 @@
 		color: var(--light-text);
 	}
 
-	#responseText {
+	#responseBubble {
 		background: var(--light-box);
 	}
 
@@ -158,18 +158,22 @@ li {
 
 button {
 	cursor: pointer;
-	font-size: 1.1rem;
 	outline: none;
 	border: none;
-	border-radius: var(--radius);
 	-moz-appearance: none;
-	color: black;
-	padding: .5rem .75rem;
+	background: none;
 }
 
 button:disabled {
-	opacity: .7;
+	opacity: .2;
 	cursor: not-allowed;
+}
+
+.action-button {
+	border-radius: var(--radius);
+	color: black;
+	padding: .5rem .75rem;
+	font-size: 1.1rem;
 }
 
 input {
@@ -215,9 +219,4 @@ select:focus {
 
 a {
 	text-decoration: underline;
-}
-
-#responseText {
-	padding: .5rem 1rem;
-	border-radius: var(--radius);
 }
