@@ -55,8 +55,8 @@
 <style>
 	@media screen and (max-width: 450px) {
 		div {
-			grid-template-columns: 50% 50%;
-			grid-template-areas: "robot response";
+			grid-template-columns: 2.5% 35% 60% 2.5%;
+			grid-template-areas: ". robot response .";
 		}
 	}	
 
@@ -85,12 +85,12 @@
 	#responseBubble {
 		width: 100%;
 		display: grid;
-		grid-template-columns: 10% 80% 10%;
+		grid-template-columns: 15% 70% 15%;
 		grid-template-areas: "left responseText right";
 		align-items: center;
-		padding: .75rem;
 		border-radius: var(--radius);
 		border-bottom-left-radius: 0;
+		padding: .75rem 0;
 	}
 
 	#left {
@@ -118,7 +118,6 @@
 		display: block;
 		width: 100%;
 		text-align: center;
-		min-width: 1.5rem;
 		height: 100%;
 	}
 </style>

@@ -48,6 +48,10 @@
 		background: var(--dark-box);
 	}
 
+	a {
+		color: var(--dark-text);
+	}
+
 	a:visited {
 		color: var(--dark-text);
 	}
@@ -90,6 +94,10 @@
 
 	#form {
 		background: var(--light-box);
+	}
+
+	a {
+		color: var(--light-text);
 	}
 
 	a:visited {
