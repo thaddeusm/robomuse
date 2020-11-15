@@ -6,7 +6,6 @@
 
 	function handleResponse(e) {
 		results = e.detail.res;
-		console.log(results);
 	}
 </script>
 

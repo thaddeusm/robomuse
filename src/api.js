@@ -3,11 +3,6 @@ export const getWords = async (query, input) => {
 	let res;
 	
 	switch (query) {
-		case 'a word synonomous with':
-			res = await getSynonyms(str);
-
-			return res;
-			break;
 		case 'a word that rhymes with':
 			res = await getRhymes(str);
 

@@ -25,9 +25,6 @@
 	<div id="top">
 		<span>I need</span>
 		<select bind:value={query}>
-			<option value="a word synonomous with">
-				a word synonomous with
-			</option>
 			<option value="a word that rhymes with">
 				a word that rhymes with
 			</option>

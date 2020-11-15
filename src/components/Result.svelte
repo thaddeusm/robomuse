@@ -48,28 +48,28 @@
 		</div>
 	</aside>
 	<section id="robot">
-		<Robot width={'10'} height={'10'} />
+		<Robot width={'6'} height={'6'} />
 	</section>
 </div>
 
 <style>
 	@media screen and (max-width: 450px) {
 		div {
-			grid-template-columns: 5% 40% 50% 5%;
+			grid-template-columns: 5% 30% 60% 5%;
 			grid-template-areas: ". robot response .";
 		}
 	}	
 
 	@media screen and (min-width: 451px) and (max-width: 800px) {
 		div {
-			grid-template-columns: 10% 35% 35% 10%;
+			grid-template-columns: 10% 25% 45% 10%;
 			grid-template-areas: ". robot response .";
 		}
 	}
 
 	@media screen and (min-width: 801px) {
 		div {
-			grid-template-columns: 30% 16% 19% 30%;
+			grid-template-columns: 30% 12% 23% 30%;
 			grid-template-areas: ". robot response .";
 		}
 	}
