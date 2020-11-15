@@ -55,7 +55,7 @@
 <style>
 	@media screen and (max-width: 450px) {
 		div {
-			grid-template-columns: 2.5% 35% 60% 2.5%;
+			grid-template-columns: 5% 40% 50% 5%;
 			grid-template-areas: ". robot response .";
 		}
 	}	
