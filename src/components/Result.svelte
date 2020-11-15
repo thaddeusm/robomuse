@@ -85,7 +85,7 @@
 	#responseBubble {
 		width: 100%;
 		display: grid;
-		grid-template-columns: 20% 60% 20%;
+		grid-template-columns: auto 1fr auto;
 		grid-template-areas: "left responseText right";
 		align-items: center;
 		border-radius: var(--radius);
@@ -95,7 +95,7 @@
 
 	#left {
 		grid-area: left;
-		text-align: left;
+		text-align: center;
 	}
 
 	#responseText {
@@ -106,7 +106,7 @@
 
 	#right {
 		grid-area: right;
-		text-align: right;
+		text-align: center;
 	}
 
 	#robot {
