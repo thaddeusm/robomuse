@@ -27,7 +27,7 @@ export const getWords = async (query, input) => {
 }
 
 const transformStr = async (input) => {
-	let urlStr = input.split(' ').join('+');
+	let urlStr = input.trim().split(' ').join('+');
 
 	return urlStr;
 }
