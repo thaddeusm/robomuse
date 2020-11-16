@@ -120,5 +120,6 @@
 		min-width: 2rem;
 		text-align: center;
 		height: 100%;
+		pointer-events: none;
 	}
 </style>
