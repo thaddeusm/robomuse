@@ -8,6 +8,8 @@
 	let userInput = '';
 	let query;
 
+	let inputElement;
+
 	let loading = false;
 
 	async function processRequest() {
@@ -22,6 +24,7 @@
 
 	function handleKeyup(e) {
 		if (e.keyCode == 13) {
+			inputElement.blur();
 			processRequest();
 		}
 	}
@@ -46,7 +49,7 @@
 		</select>
 	</div>
 	<div id="bottom">
-		<input type="text" bind:value={userInput} on:keyup={handleKeyup}>
+		<input bind:this={inputElement} type="text" bind:value={userInput} on:keyup={handleKeyup}>
 		<button class="action-button" on:click={processRequest} disabled={userInput == '' || loading}>search</button>
 	</div>
 </section>
