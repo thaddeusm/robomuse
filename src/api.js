@@ -3,6 +3,11 @@ export const getWords = async (query, input) => {
 	let res;
 	
 	switch (query) {
+		case 'a word similar to the phrase':
+			res = await getEquivalent(str);
+
+			return res;
+			break;
 		case 'a word that rhymes with':
 			res = await getRhymes(str);
 
@@ -32,7 +37,7 @@ const transformStr = async (input) => {
 	return urlStr;
 }
 
-const getSynonyms = async (str) => {
+const getEquivalent = async (str) => {
 	let res;
 	try {
 		res = await fetch(`https://api.datamuse.com/words?ml=${str}`, {

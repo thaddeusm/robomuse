@@ -15,6 +15,8 @@
 	--dark-box: #3E464E;
 	--dark-accent: #3EF5FF;
 	--dark-gray: #627B8C;
+	--light-highlight: #98F1F5;
+	--dark-highlight: #00A1AA;
 	--radius: .5rem;
 }
 
@@ -61,7 +63,7 @@
 	}
 
 	::selection {
-	    background: var(--dark-gray);
+	    background: var(--dark-highlight);
 	}
 }
 
@@ -108,7 +110,7 @@
 	}
 
 	::selection {
-	    background: var(--light-gray);
+	    background: var(--light-highlight);
 	}
 }
 

@@ -96,6 +96,7 @@
 	#left {
 		grid-area: left;
 		text-align: center;
+		min-width: 2rem;
 	}
 
 	#responseText {
@@ -107,6 +108,7 @@
 	#right {
 		grid-area: right;
 		text-align: center;
+		min-width: 2rem;
 	}
 
 	#robot {
