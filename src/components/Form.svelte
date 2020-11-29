@@ -34,9 +34,6 @@
 	<div id="top">
 		<span>I need</span>
 		<select bind:value={query}>
-			<option value="a word similar to the phrase">
-				a word similar to the phrase
-			</option>
 			<option value="a word that rhymes with">
 				a word that rhymes with
 			</option>
@@ -48,6 +45,9 @@
 			</option>
 			<option value="a word that goes with">
 				a word that goes with
+			</option>
+			<option value="a word similar to the phrase">
+				a word similar to the phrase
 			</option>
 		</select>
 	</div>
