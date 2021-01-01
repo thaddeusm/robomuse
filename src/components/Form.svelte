@@ -43,8 +43,8 @@
 			<option value="a noun often described as">
 				a noun often described as
 			</option>
-			<option value="a word that goes with">
-				a word that goes with
+			<option value="a word that could follow">
+				a word that could follow
 			</option>
 			<option value="a word similar to the phrase">
 				a word similar to the phrase

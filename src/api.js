@@ -23,7 +23,7 @@ export const getWords = async (query, input) => {
 
 			return res;
 			break;
-		case 'a word that goes with':
+		case 'a word that could follow':
 			res = await getCollocations(str);
 
 			return res;
@@ -100,11 +100,13 @@ const getNouns = async (str) => {
 const getCollocations = async (str) => {
 	let res;
 	try {
-		res = await fetch(`https://api.datamuse.com/words?rel_trg=${str}`, {
+		res = await fetch(`https://api.datamuse.com/words?lc=${str}`, {
 			method: 'GET'
 		});
 
 		let parsed = await res.json();
+
+		console.log(parsed);
 
 		return parsed;
 	} catch(err) {
