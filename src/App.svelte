@@ -13,7 +13,7 @@
 	<header>
 		<h2 id="appName">Robomuse</h2>
 		<h6 id="author">
-			made with ❤️ by <a href="https://thaddeus.education/" target="_blank">Thaddeus</a>
+			made with ❤️ by <a href="https://thaddeus-mccleary.vercel.app/" target="_blank">Thaddeus</a>
 		</h6>
 	</header>
 	<main>
